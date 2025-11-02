@@ -698,6 +698,24 @@ img {
   color: var(--muted);
   font-size: 16px;
 }
+<<<<<<< HEAD
+=======
+.service__block-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #e11d2e; /* красный акцент */
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.service__block-btn:hover {
+  background: #e11d2e;
+}
+>>>>>>> 7274d14 (VikupAuto03112025)
 
 /* =========================
    FOOTER
@@ -773,6 +791,12 @@ img {
   .footer__top {
     justify-content: center;
   }
+<<<<<<< HEAD
+=======
+  .service__block {
+    text-align: center;
+  }
+>>>>>>> 7274d14 (VikupAuto03112025)
 }
 
 /* телефоны */
@@ -820,6 +844,27 @@ img {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
   padding: 18px;
 }
+<<<<<<< HEAD
+=======
+.lead-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lead-modal__close {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  color: #ffffff;
+  transition: color 0.2s ease;
+}
+.lead-modal__close:hover {
+  color: #000;
+}
+>>>>>>> 7274d14 (VikupAuto03112025)
 
 /* Заголовок */
 .lead-modal__title {
@@ -862,7 +907,11 @@ img {
   justify-content: flex-end;
   margin-top: 6px;
 }
+<<<<<<< HEAD
 
+=======
+/* Дополнения к твоим стилям */
+>>>>>>> 7274d14 (VikupAuto03112025)
 .lead-modal__btn {
   border: 1px solid transparent;
   border-radius: 10px;
@@ -874,6 +923,25 @@ img {
     transform 0.12s ease;
 }
 
+<<<<<<< HEAD
+=======
+/* состояние disabled — визуально и по курсору */
+.lead-modal__btn:disabled,
+.lead-modal__btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* если у primary есть фон — приглушим его при disabled */
+.lead-modal__btn--primary:disabled {
+  background-color: #ccc;
+  color: #666;
+  border-color: #ccc;
+}
+
+>>>>>>> 7274d14 (VikupAuto03112025)
 .lead-modal__btn--primary {
   background: var(--brand, #e11d2e);
   color: #fff;
@@ -912,6 +980,21 @@ img {
   color: var(--muted, #666);
   font-size: 15px;
 }
+<<<<<<< HEAD
+=======
+/* Состояние валидации */
+.lead-modal__input.is-valid,
+.lead-modal__textarea.is-valid {
+  border-color: #16a34a; /* зелёный */
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+}
+
+.lead-modal__input.is-invalid,
+.lead-modal__textarea.is-invalid {
+  border-color: #dc2626; /* красный */
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+}
+>>>>>>> 7274d14 (VikupAuto03112025)
 
 /* Адаптив — чуть увеличим внутренние отступы на совсем маленьких экранах */
 @media (max-width: 400px) {
@@ -1045,6 +1128,195 @@ a:hover {
   color: #8fa5bc;
 }
 
+<<<<<<< HEAD
+=======
+/* ===== SERVICE PAGE (Vyplata) ===== */
+.page--service .section {
+  padding: 56px 0;
+}
+@media (max-width: 720px) {
+  .page--service .section {
+    padding: 40px 0;
+  }
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+  margin: 18px auto 8px;
+  font-size: 14px;
+  color: #9fb3c8;
+}
+.breadcrumbs a {
+  color: #cfe0f0;
+}
+.breadcrumbs a:hover {
+  color: #fff;
+}
+
+/* Hero секция */
+.section--hero {
+  padding: 56px 0 28px;
+  background: linear-gradient(
+    180deg,
+    rgba(20, 39, 60, 0.4),
+    rgba(20, 39, 60, 0)
+  );
+}
+.section--hero .lead {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #cfe0f0;
+  max-width: 820px;
+}
+.badges {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.badges li {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #14273c;
+  border: 1px solid #203a57;
+  font-weight: 600;
+  font-size: 14px;
+  color: #eaf1f8;
+}
+
+/* CTA row */
+.cta-row {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.cta-row .btn {
+  min-width: 180px;
+}
+
+/* Грид на 3 карточки (не конфликтует с .grid-3) */
+.grid.grid--3 {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 860px) {
+  .grid.grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.grid.grid--3 .card {
+  background: #14273c;
+  border: 1px solid #203a57;
+}
+
+/* Шаги (нумерованный список) */
+.steps {
+  counter-reset: step;
+  display: grid;
+  gap: 14px;
+  padding-left: 0;
+  list-style: none;
+  margin: 14px 0 0;
+}
+.steps li {
+  position: relative;
+  padding: 14px 14px 14px 54px;
+  background: #14273c;
+  border: 1px solid #203a57;
+  border-radius: 12px;
+}
+.steps li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--brand, #e11d2e);
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Список "что нужно подготовить" */
+.list {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+.list li {
+  margin: 6px 0;
+  color: #cfe0f0;
+}
+
+/* FAQ (details/summary) */
+.faq {
+  background: #14273c;
+  border: 1px solid #203a57;
+  border-radius: 12px;
+  padding: 0;
+  overflow: hidden;
+}
+.faq + .faq {
+  margin-top: 10px;
+}
+.faq > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 14px 16px;
+  font-weight: 700;
+  color: #eaf1f8;
+}
+.faq > summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq > p {
+  margin: 0;
+  padding: 12px 16px 16px;
+  color: #cfe0f0;
+}
+
+/* Заголовки внутри страницы */
+.page--service .h1 {
+  font-size: clamp(28px, 4.6vw, 42px);
+  margin: 0 0 10px;
+}
+.page--service .h2 {
+  font-size: clamp(22px, 3.2vw, 28px);
+  margin: 0 0 14px;
+}
+
+/* Мелкие улучшения для ссылок */
+.page--service a.btn.btn--ghost {
+  background: transparent;
+  border: 1px solid #203a57;
+  color: #eaf1f8;
+}
+.page--service a.btn.btn--ghost:hover {
+  background: #14273c;
+}
+
+/* Адаптив для узких экранов */
+@media (max-width: 600px) {
+  .breadcrumbs {
+    padding: 0 16px;
+  }
+  .section--hero .lead {
+    font-size: 16px;
+  }
+  .cta-row .btn {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+}
+
+>>>>>>> 7274d14 (VikupAuto03112025)
 /* Online zapis btn */
 .online__zapis-button {
   position: fixed;

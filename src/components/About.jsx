@@ -2,14 +2,51 @@ import React from "react";
 import aboutCar1x from "../assets/about/about-red-car.webp";
 import Seo from "../seo/Seo";
 
+<<<<<<< HEAD
+=======
+const SITE = "https://vikupauto39.ru";
+const PAGE_URL = `${SITE}/about`;
+
+function breadcrumbJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Главная", item: SITE },
+      { "@type": "ListItem", position: 2, name: "О нас", item: PAGE_URL },
+    ],
+  };
+}
+
+function webPageJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${PAGE_URL}#webpage`,
+    url: PAGE_URL,
+    name: "О нас | VikupAuto39",
+    description:
+      "VikupAuto39 — команда, которая помогает продать авто быстро и прозрачно. Работаем официально, без скрытых комиссий. Предварительная оценка, быстрый осмотр и оформление документов.",
+    isPartOf: { "@id": "https://vikupauto39.ru/#website" },
+  };
+}
+
+>>>>>>> 7274d14 (VikupAuto03112025)
 export default function About() {
   return (
     <>
       <Seo
         title="О нас | VikupAuto39"
         description="VikupAuto39 — команда, которая помогает продать авто быстро и прозрачно. Работаем официально, без скрытых комиссий. Предварительная оценка, быстрый осмотр и оформление документов."
+<<<<<<< HEAD
         url="https://vikupauto39.ru/about"
         image="https://vikupauto39.ru/images/og/about.jpg"
+=======
+        url={PAGE_URL}
+        image="https://vikupauto39.ru/images/og/about.jpg"
+        ogType="website"
+        jsonLdExtra={[breadcrumbJsonLd(), webPageJsonLd()]}
+>>>>>>> 7274d14 (VikupAuto03112025)
       />
 
       <section className="about" id="about">

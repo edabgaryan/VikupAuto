@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
 
+<<<<<<< HEAD
+=======
+# Запрещаем служебные папки (если такие есть в билде)
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Указываем путь к карте сайта
+>>>>>>> 7274d14 (VikupAuto03112025)
 Sitemap: https://vikupauto39.ru/sitemap.xml

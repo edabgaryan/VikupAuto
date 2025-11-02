@@ -1,6 +1,12 @@
 import React from "react";
 import Seo from "../seo/Seo";
 
+<<<<<<< HEAD
+=======
+const SITE = "https://vikupauto39.ru";
+const PAGE_URL = `${SITE}/benefits`;
+
+>>>>>>> 7274d14 (VikupAuto03112025)
 const items = [
   {
     paragraph: "*",
@@ -19,14 +25,65 @@ const items = [
   },
 ];
 
+<<<<<<< HEAD
+=======
+// --- JSON-LD (только SEO, UI не трогаем)
+function breadcrumbJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Главная", item: SITE },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Наши преимущества",
+        item: PAGE_URL,
+      },
+    ],
+  };
+}
+
+function webPageJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${PAGE_URL}#webpage`,
+    url: PAGE_URL,
+    name: "Наши преимущества | VikupAuto39",
+    description:
+      "Почему клиенты выбирают VikupAuto39: быстрая оценка авто за 5 минут, прозрачная цена без комиссий, выезд и помощь в оформлении документов.",
+  };
+}
+
+function itemListJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: items.map((it, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: it.title,
+    })),
+  };
+}
+
+>>>>>>> 7274d14 (VikupAuto03112025)
 export default function Benefits() {
   return (
     <>
       <Seo
         title="Наши преимущества | VikupAuto39"
         description="Почему клиенты выбирают VikupAuto39: быстрая оценка авто за 5 минут, прозрачная цена без комиссий, выезд и помощь в оформлении документов."
+<<<<<<< HEAD
         url="https://vikupauto39.ru/benefits"
         image="https://vikupauto39.ru/images/og/benefits.jpg"
+=======
+        url={PAGE_URL}
+        image="https://vikupauto39.ru/images/og/benefits.jpg"
+        ogType="website"
+        jsonLdExtra={[breadcrumbJsonLd(), webPageJsonLd(), itemListJsonLd()]}
+>>>>>>> 7274d14 (VikupAuto03112025)
       />
 
       <section className="section" id="benefits">

@@ -47,7 +47,11 @@ export default function Header({ onOpen }) {
       <header className="header">
         <div className="container header-inner">
           <div>
+<<<<<<< HEAD
             <a href="#top" className="header__logo" />
+=======
+            <a href="/" className="header__logo" />
+>>>>>>> 7274d14 (VikupAuto03112025)
           </div>
 
           <div className="header-cta">

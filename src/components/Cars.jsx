@@ -18,7 +18,10 @@ export default function BoughtCars() {
   return (
     <>
       <Seo
+<<<<<<< HEAD
         title="Выкупленные автомобили | VikupAuto39"
+=======
+>>>>>>> 7274d14 (VikupAuto03112025)
         description="Примеры автомобилей, которые мы выкупили в Калининграде. Выкупаем авто в любом состоянии: новые, подержанные, после ДТП."
         url="https://vikupauto39.ru/bought-cars"
         image="https://vikupauto39.ru/images/og/bought-cars.jpg"

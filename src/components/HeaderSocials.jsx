@@ -7,7 +7,10 @@ export default function Hero({ onOpen }) {
   return (
     <>
       <Seo
+<<<<<<< HEAD
         title="VikupAuto39 — срочный выкуп авто в Калининграде"
+=======
+>>>>>>> 7274d14 (VikupAuto03112025)
         description="Быстрый и честный выкуп автомобилей в Калининграде. Оценка за 5 минут по фото, оформление и деньги в день сделки."
         url="https://vikupauto39.ru/"
         image="https://vikupauto39.ru/images/og/home.jpg"
